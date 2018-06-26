@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head><link rel="stylesheet" href="css.css">
+  <body><div class="total">
+
+
+
+    <div class="">
+
+<div class="123">
+
+
+    <button type="button" name="button"onclick="c1()">1</button>
+      <button type="button" name="button"onclick="c2()">2</button>
+        <button type="button" name="button"onclick="c3()">3</button>
+      <button type="button" id="button4"onclick="cc()">C</button>
+     </div>
+        <div class="456">
+
+
+          <button type="button" name="button"onclick="c4()">4</button>
+            <button type="button" name="button"onclick="c5()">5</button>
+              <button type="button" name="button"onclick="c6()">6</button>
+            <button type="button" id="button2"onclick="cx()">x </button>
+          <input type="text" id="i1" ></div>
+              <div class="789">
+
+
+                <button type="button" name="button"onclick="c7()">7</button>
+                  <button type="button" name="button"onclick="c8()">8</button>
+                    <button type="button" name="button"onclick="c9()">9</button>
+                  <button type="button" name="button"onclick="cd()">%</button>
+                <input type="text" id="figure" ><input type="text" id="i2" ></div>
+                    <div class="0">
+
+
+                      <button type="button" name="button"onclick="c0()">0</button>
+                        <button type="button" name="button"onclick="ca()">+</button>
+                          <button type="button" id="button1"onclick="cm()">-</button>
+
+
+
+                                <button type="button" id="button3"onclick="ce()">=</button>
+                              =<input type="text" id="ans"></div>
+
+                                    </div>
+
+
+
+</div>
+                                <script type="text/javascript">
+
+                                var a='0',b,ans,c,d=0;
+function cc(){
+  document.querySelector('#i1').value=' '
+  document.querySelector('#i2').value=' '
+  document.querySelector('#figure').value=' '
+  document.querySelector('#ans').value=' '
+  a=0;ans=0;
+}
+                                  function c1(){
+                                    a=a+'1';
+                                    if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                    else document.querySelector('#i2').value=parseInt(a);
+                                  }
+                                  function c2(){
+                                    a=a;ans=parseInt(a)
+                                    if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                    else document.querySelector('#i2').value=parseInt(a);
+                                  }    function c3(){
+                                        a+='3';ans=parseInt(a)
+                                        if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                        else document.querySelector('#i2').value=parseInt(a);
+                                      }    function c4(){
+                                            a+='4';ans=parseInt(a)
+                                            if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                            else document.querySelector('#i2').value=parseInt(a);
+                                          }    function c5(){
+                                                a+='5';ans=parseInt(a)
+                                                if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                                else document.querySelector('#i2').value=parseInt(a);
+                                              }    function c6(){
+                                                    a+='6';ans=parseInt(a)
+                                                    if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                                    else document.querySelector('#i2').value=parseInt(a);
+                                                  }    function c7(){
+                                                        a+='7';ans=parseInt(a)
+                                                        if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                                        else document.querySelector('#i2').value=parseInt(a);
+                                                      }    function c8(){
+                                                            a+='8';ans=parseInt(a)
+                                                            if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                                            else document.querySelector('#i2').value=parseInt(a);
+                                                          }    function c9(){
+                                                                a+='9';ans=parseInt(a)
+                                                                if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                                                else document.querySelector('#i2').value=parseInt(a);
+                                                              }    function c0(){
+                                                                    a+='0';ans=parseInt(a)
+                                                                    if(d==0) document.querySelector('#i1').value=parseInt(a);
+                                                                    else document.querySelector('#i2').value=parseInt(a);
+                                                                  }
+                                                                  function ca(){d=1;
+                                                                    b=parseInt(a);a=0;c='+';document.querySelector('#figure').value='+'
+                                                                  }
+                                                                  function cm(){d=1;
+                                                                    b=parseInt(a);a=0;c='-';document.querySelector('#figure').value='-'
+                                                                  }
+                                                                  function cx(){d=1;
+                                                                    b=parseInt(a);a=0;c='*';document.querySelector('#figure').value='x'
+                                                                  }
+                                                                  function cd(){d=1;
+                                                                    b=parseInt(a);a=0;c='/';document.querySelector('#figure').value='%';document.querySelector('#i1').value=b;
+                                                                  }
+                                                                  function ce(){d=0;
+                                                                    switch(c)
+                                                                    {
+                                                                      case '+':ans=parseInt(a)+b;break;
+                                                                          case '-':ans=b-parseInt(a);break;
+                                                                              case '*':ans=b*parseInt(a);break;
+                                                                                  case '/':ans=b/parseInt(a);break;
+
+                                                                    }a=0;b=0;
+                                                                    document.querySelector('#ans').value=ans;ans=0;
+                                                                  }
+                                </script>
+  </body>
+</html>
